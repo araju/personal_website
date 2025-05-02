@@ -1,0 +1,25 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS specific files
+*.swp
+*.lock
+*.swo
+*.tmp
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+*.orig
+*.swp
+
+# Static site generator output
+public/
+.cache/
