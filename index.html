@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akhil Raju</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+    }
+    @media (max-width: 768px) {
+      .doodle {
+        opacity: 0.2;
+      }
+    }
+    .link-style {
+      color: #3b82f6; /* Tailwind's blue-500 */
+      text-decoration: underline;
+    }
+    .link-style:hover {
+      color: #1d4ed8; /* Tailwind's blue-700 */
+    }
+  </style>
+</head>
+<body class="text-gray-800 relative">
+  <!-- Doodle placeholders -->
+  <img src="assets/robot_doodle1.png" alt="Doodle" class="absolute top-10 left-10 w-10 h-10 doodle">
+  <img src="assets/robot_doodle2.png" alt="Doodle" class="absolute bottom-20 right-10 w-10 h-10 doodle">
+
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
+      <img src="assets/face.jpg" alt="Akhil's face" class="w-32 h-32 rounded-full mb-4 md:mb-0 shadow-md">
+      <div class="text-left w-full">
+        <div class="flex items-center space-x-2 mb-2">
+          <h1 class="text-3xl font-semibold">Hi, I'm Akhil</h1>
+          <img src="assets/robot_doodle3.png" alt="Jumping Robot Doodle" class="w-8 h-8 md:w-10 md:h-10">
+        </div>
+        <p class="text-lg text-gray-600 mb-2">
+          I love building things at the intersection of AI, robotics, and people. And I love occasionally
+          making bad sports takes rooted in a little data and a lot of personal bias.
+        </p>
+        <p class="text-lg text-gray-600 mb-6">
+          I'm currently working on a robotics startup that will enable <i>anyone</i> use robots, not
+          just people who program.
+        </p>
+        <div class="flex space-x-4 mb-8 items-center">
+          <a href="https://github.com/araju" class="hover:opacity-80">
+            <img src="assets/github-mark.png" alt="GitHub" class="w-6 h-6">
+          </a>
+          <a href="https://scholar.google.com/citations?user=ks-gKdsAAAAJ" class="hover:opacity-80">
+            <img src="./assets/Google_Scholar_logo.png" alt="Google Scholar" class="w-6 h-6">
+          </a>
+          <a href="https://www.linkedin.com/in/akhil-raju-88662826/" class="hover:opacity-80">
+            <img src="assets/LI-In-Bug.png" alt="LinkedIn" class="w-6 h-6">
+          </a>
+          <a href="https://twitter.com/AkhilRaju92" class="hover:opacity-80">
+            <img src="assets/x-logo-black.png" alt="X (Twitter)" class="w-6 h-6">
+          </a>
+          <a href="https://instagram.com/monkeydudemn" class="hover:opacity-80">
+            <img src="assets/Instagram_Glyph_Gradient.png" alt="Instagram" class="w-6 h-6">
+          </a>
+        </div>
+
+        <!-- Project highlights section -->
+        <div class="text-left mb-10 mt-10">
+          <h2 class="text-xl font-semibold mb-4">Project highlights</h2>
+          <div class="space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6">
+              <a href="https://github.com/google-deepmind/torax" class="w-full sm:w-1/5 mb-4 sm:mb-0">
+                <img src="assets/torax.png" alt="TORAX" class="w-full object-cover rounded-lg shadow-md">
+              </a>
+              <p class="text-gray-700 text-base sm:w-4/5">
+                <i>(2023)</i> <a href="https://github.com/google-deepmind/torax" class="link-style">TORAX</a>
+                is an open-source, JAX-based simulator for tokamak core transport, i.e. a simulator for how
+                the physics within plasma inside a nuclear reactor evolves over time.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6">
+              <a href="https://deepmind.google/discover/blog/robocat-a-self-improving-robotic-agent/" class="w-full sm:w-1/5 mb-4 sm:mb-0">
+                <img src="assets/robocat2.gif" alt="Robocat" class="w-full object-cover rounded-lg shadow-md">
+              </a>
+              <p class="text-gray-700 text-base sm:w-4/5">
+                <i>(2023)</i> <a href="https://deepmind.google/discover/blog/robocat-a-self-improving-robotic-agent/" class="link-style">RoboCat</a>
+                is a self-improving robotic agent that learns to solve tasks in the real world and improves its
+                performance over time. A single model was able to solve tasks on different tasks and different
+                robots.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6">
+              <a href="https://github.com/google-deepmind/dm_robotics" class="w-full sm:w-1/5 mb-4 sm:mb-0">
+                <img src="assets/dm_robotics.png" alt="dm_robotics" class="w-full object-cover rounded-lg shadow-md">
+              </a>
+              <p class="text-gray-700 text-base sm:w-4/5">
+                <i>(2021)</i> <a href="https://github.com/google-deepmind/dm_robotics" class="link-style">dm_robotics</a>
+                is an open-source robotics library that provides tools to build environments and scripted agents for
+                use in simulation and real-world robotics.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6">
+              <a href="https://deepmind.google/discover/blog/stacking-our-way-to-more-general-robots/" class="w-full sm:w-1/5 mb-4 sm:mb-0">
+                <img src="assets/stacking1.png" alt="rgb-stacking" class="w-full object-cover rounded-lg shadow-md">
+              </a>
+              <p class="text-gray-700 text-base sm:w-4/5">
+                <i>(2021)</i> <a href="https://deepmind.google/discover/blog/stacking-our-way-to-more-general-robots/" class="link-style">RGB Stacking</a>
+                is a real and simulation robotics benchmark for vision-based object manipulation, where we trained several RL-based agents.
+                Code for the assets and environments is available on
+                <a href="https://github.com/google-deepmind/rgb_stacking" class="link-style">GitHub</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adjusted alignment for work section -->
+        <div class="text-left mb-10 mt-10">
+          <h2 class="text-xl font-semibold mb-0">Places I've worked</h2>
+          <div class="grid grid-cols-3 sm:grid-cols-5 gap-3">
+            <div class="flex justify-start items-center">
+              <img src="assets/DeepMind_logo.png" alt="DeepMind" class="w-20 object-contain">
+            </div>
+            <div class="flex justify-start items-center">
+              <img src="assets/Google_2015_logo.svg.png" alt="Google" class="w-20 object-contain">
+            </div>
+            <div class="flex justify-start items-center">
+              <img src="assets/Kamcord+Logo.png" alt="Kamcord" class="w-20 object-contain">
+            </div>
+            <div class="flex justify-start items-center">
+              <img src="assets/Palantir_company_logo.png" alt="Palantir" class="w-20 object-contain">
+            </div>
+            <div class="flex justify-start items-center">
+              <img src="assets/WhatsApp.svg.png" alt="WhatsApp" class="w-16 object-contain">
+            </div>
+            <div class="flex justify-start items-center">
+              <img src="assets/ArcSight_logo.svg.png" alt="ArcSight" class="w-20 object-contain">
+            </div>
+            <div class="flex justify-start items-center">
+              <img src="assets/MIT_logo.svg.png" alt="MIT" class="w-16 object-contain">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More doodle placeholders near content -->
+    <img src="assets/robot_doodle4.png" alt="Doodle" class="absolute top-[620px] right-[25%] w-10 h-10 doodle">
+
+    <footer class="text-left text-gray-400 text-sm mt-12 px-4 py-4">
+      &copy; 2025 Akhil Raju — All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
